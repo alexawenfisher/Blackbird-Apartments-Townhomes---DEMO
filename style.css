@@ -1,123 +1,194 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 header {
-    height: 100vh;
-    background: url('images/chair.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 100vh;
+  background: url("images/chair.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgb(0, 0, 0);
 }
 
-.logo {
-    font-size: 2rem;
-    font-weight: bold;
-    background-image: url('images/logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100px;
-    height: 100px;
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-container img {
+  height: 50px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(82, 190, 212);
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
 }
 
 .nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-    color: #00aaff;
+  color: #00aaff;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dropbtn {
+  background-color: #04aa6d00;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:before {
+  content: "►";
+  font-size: 10px;
+  color: white;
+  position: absolute;
+  top: 0.5em;
+  right: -2em;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.dropdown-content a:hover:before {
+  right: 1em;
+  opacity: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: #00aaff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #00aaff;
 }
 
 .cta-btn a {
-    background-color: #00aaff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;
+  background-color: #00aaff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
 }
 
 .hero {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
-    margin-top: 10vh;
-    align-items: center;
-    padding: 0 2rem;
-    color: black;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  margin-top: 5vh;
+  align-items: center;
+  padding: 0 2rem;
+  color: black;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    max-width: 600px;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
 }
 
 .btn {
-    background-color: #00aaff;
-    padding: 0.8rem 1.5rem;
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    border-radius: 5px;
+  background-color: #00aaff;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
 }
 
-.services, .about, .contact {
-    padding: 2rem;
-    text-align: center;
+.services,
+.about,
+.contact {
+  padding: 2rem;
+  text-align: center;
 }
 
 .service-cards {
-    display: flex;
-    justify-content: space-around;
-    gap: 1rem;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
 .card {
-    background-color: #b82222;
-    padding: 2rem;
-    border-radius: 10px;
-    max-width: 300px;
+  background-color: #b82222;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 300px;
 }
 
 footer {
-    background-color: #333;
-    color: rgb(10, 169, 100);
-    text-align: center;
-    padding: 1rem 0;
+  background-color: #333;
+  color: rgb(10, 169, 100);
+  text-align: center;
+  padding: 1rem 0;
 }
