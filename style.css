@@ -169,6 +169,20 @@ nav {
   padding: 2rem;
   text-align: center;
 }
+.contact p {
+  margin-bottom: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.about {
+  font-family: "Roboto", sans-serif;
+  background-color: #082134;
+  background-image: url("images/full_logo.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: white;
+}
 
 .service-cards {
   display: flex;
@@ -178,10 +192,16 @@ nav {
 }
 
 .card {
-  background-color: #b82222;
+  background-color: #f4f4f4;
   padding: 2rem;
   border-radius: 10px;
-  max-width: 300px;
+  max-width: 400px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 footer {
