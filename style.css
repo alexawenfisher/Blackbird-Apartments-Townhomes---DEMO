@@ -177,7 +177,7 @@ nav {
 .about {
   font-family: "Roboto", sans-serif;
   background-color: #082134;
-  background-image: url("images/full_logo.png");
+  background-image: url("images/logo.png");
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -205,8 +205,8 @@ nav {
 }
 
 footer {
-  background-color: #333;
-  color: rgb(10, 169, 100);
+  background-color: #082134;
+  color: white;
   text-align: center;
   padding: 1rem 0;
 }
