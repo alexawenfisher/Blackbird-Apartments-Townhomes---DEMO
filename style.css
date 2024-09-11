@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,7 @@ body {
   line-height: 1.6;
 }
 
+/* Header Section */
 header {
   position: relative;
   height: 100vh;
@@ -33,6 +35,7 @@ header::before {
   z-index: -1;
 }
 
+/* Navigation */
 nav {
   display: flex;
   justify-content: space-between;
@@ -82,6 +85,7 @@ nav {
   gap: 1rem;
 }
 
+/* Dropdown Menu */
 .dropbtn {
   background-color: #04aa6d00;
   color: white;
@@ -123,6 +127,7 @@ nav {
   color: #00aaff;
 }
 
+/* Call to Action Button */
 .cta-btn a {
   background-color: #00aaff;
   padding: 0.5rem 1rem;
@@ -131,6 +136,7 @@ nav {
   text-decoration: none;
 }
 
+/* Hero Section */
 .hero {
   flex-grow: 1;
   display: flex;
@@ -163,17 +169,20 @@ nav {
   border-radius: 5px;
 }
 
+/* Services, About, and Contact Sections */
 .services,
 .about,
 .contact {
   padding: 2rem;
   text-align: center;
 }
+
 .contact p {
   margin-bottom: 1rem;
   font-family: "Open Sans", sans-serif;
 }
 
+/* About Section */
 .about {
   font-family: "Roboto", sans-serif;
   background-color: #082134;
@@ -184,6 +193,7 @@ nav {
   color: white;
 }
 
+/* Service Cards */
 .service-cards {
   display: flex;
   justify-content: space-around;
@@ -204,6 +214,7 @@ nav {
   border-radius: 10px;
 }
 
+/* Footer Section */
 footer {
   background-color: #082134;
   color: white;
